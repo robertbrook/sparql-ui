@@ -21,7 +21,7 @@
     require_once "html_tag_helpers.php";
 
     // Stupid PHP :(
-    if (get_magic_quotes_gpc() and isset($_REQUEST['query'])) {
+    if (isset($_REQUEST['query'])) {
         $_REQUEST['query'] = stripslashes($_REQUEST['query']);
     }
 ?>
