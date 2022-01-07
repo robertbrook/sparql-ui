@@ -54,7 +54,7 @@
         print "<body>\n";
         print "<h1>EasyRdf Converter</h1>\n";
 
-        print "<div style='margin: 10px'>\n";
+        print "<div>\n";
         print form_tag();
         print label_tag('data', 'Input Data: ').'<br />'.text_area_tag('data', '', array('cols'=>80, 'rows'=>10)) . "<br />\n";
         print label_tag('uri', 'or Uri: ').text_field_tag('uri', 'http://danbri.org/foaf.rdf#danbri', array('size'=>80)) . "<br />\n";
@@ -89,7 +89,7 @@
             header('Content-Type: '.$format->getDefaultMimeType());
             print $output;
         } else {
-            print '<pre>'.htmlspecialchars($output).'</pre>';
+            // print '<pre>'.htmlspecialchars($output).'</pre>';
             print '<textarea id="myTextarea">'.htmlspecialchars($output).'</textarea>';
         }
     }
