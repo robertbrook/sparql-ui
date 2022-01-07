@@ -42,11 +42,11 @@
 <body>
 <h1>EasyRdf SPARQL Query Form</h1>
 
-<div style="margin: 0.5em">
+<div>
   <?php
     print form_tag();
     print label_tag('endpoint');
-    print text_field_tag('endpoint', "http://dbpedia.org/sparql", array('size'=>80)).'<br />';
+    print text_field_tag('endpoint', "https://api.parliament.uk/sparql", array('size'=>80)).'<br />';
     print "<code>";
     foreach(\EasyRdf\RdfNamespace::namespaces() as $prefix => $uri) {
         print "PREFIX $prefix: &lt;".htmlspecialchars($uri)."&gt;<br />\n";
