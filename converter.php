@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 <?php
     /**
      * Convert RDF from one format to another
@@ -48,7 +47,7 @@
     // Display the form, if raw option isn't set
     if (!isset($_REQUEST['raw'])) {
         print "<html>\n";
-        print "<head><title>EasyRdf Converter</title></head>\n";
+        print "<head><title>EasyRdf Converter</title><link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/water.css@2/out/water.css\"></head>\n";
         print "<body>\n";
         print "<h1>EasyRdf Converter</h1>\n";
 
