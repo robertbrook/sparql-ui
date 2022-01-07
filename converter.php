@@ -47,7 +47,10 @@
     // Display the form, if raw option isn't set
     if (!isset($_REQUEST['raw'])) {
         print "<html>\n";
-        print "<head><title>EasyRdf Converter</title><link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/water.css@2/out/water.css\"></head>\n";
+        print "<head><title>EasyRdf Converter</title><link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/water.css@2/out/water.css\">\n";
+        print '<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/codemirror.min.js" integrity="sha512-JpMCZgesTWh1iu/8ujURbwkJBgbgFWe3sTNCHdIuEvPwZuuN0nTUr2yawXahpgdEK7FOZUlW254Rp7AyDYJdjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>\n';
+        print '<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/codemirror.js" integrity="sha512-dK6guy/5KfuGFyZqGjtWr1HH8AGkI9UGZKD0uB9EDivJHt3dLSDgTteU0lsY4HtYbi3YhYnoKWQ5EfPS9TRCDg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>';
+        print "</head>\n";
         print "<body>\n";
         print "<h1>EasyRdf Converter</h1>\n";
 
@@ -87,8 +90,11 @@
             print $output;
         } else {
             print '<pre>'.htmlspecialchars($output).'</pre>';
+            print '<textarea id="myTextarea">'.htmlspecialchars($output).'</textarea>';
         }
     }
+
+print "<script>var editor = CodeMirror.fromTextArea(myTextarea, {lineNumbers: true});</script>";
 
     if (!isset($_REQUEST['raw'])) {
         print "</body>\n";
