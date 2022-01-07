@@ -12,7 +12,7 @@
      * @license    http://unlicense.org/
      */
 
-    require_once "/vendor/autoload.php";
+    require_once "./vendor/autoload.php";
 ?>
 <html>
 <head>
