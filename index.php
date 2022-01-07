@@ -5,3 +5,6 @@
   
   <p>
     <a href="sparql_queryform.php">sparql_queryform.php</a>
+
+      <p>
+    <a href="yasgui.html">yasgui.html</a>
