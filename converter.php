@@ -18,7 +18,7 @@
      */
 
     require_once "./vendor/autoload.php";
-    require_once "./html_tag_helpers.php";
+    require_once "html_tag_helpers.php";
 
     $input_format_options = array('Guess' => 'guess');
     $output_format_options = array();
