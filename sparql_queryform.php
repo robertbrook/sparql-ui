@@ -18,7 +18,7 @@
      */
 
     require_once "./vendor/autoload.php";
-    require_once "/html_tag_helpers.php";
+    require_once "html_tag_helpers.php";
 
     // Stupid PHP :(
     if (get_magic_quotes_gpc() and isset($_REQUEST['query'])) {
