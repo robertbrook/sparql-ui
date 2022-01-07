@@ -94,7 +94,7 @@
         }
     }
 
-print "<script>var editor = CodeMirror.fromTextArea(myTextarea, {lineNumbers: true});</script>";
+print "<script>var editor = CodeMirror.fromTextArea(myTextarea, {lineNumbers: false});</script>";
 
     if (!isset($_REQUEST['raw'])) {
         print "</body>\n";
