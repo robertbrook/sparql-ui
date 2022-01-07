@@ -37,6 +37,7 @@
       background-color: #E6E6E6;
     }
   </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 <body>
 <h1>EasyRdf SPARQL Query Form</h1>
