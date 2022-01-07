@@ -38,6 +38,7 @@
     }
   </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <meta name="viewport" content="width=device-width">
 </head>
 <body>
 <h1>EasyRdf SPARQL Query Form</h1>
