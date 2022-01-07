@@ -48,6 +48,7 @@
     if (!isset($_REQUEST['raw'])) {
         print "<html>\n";
         print "<head><title>EasyRdf Converter</title><link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/water.css@2/out/water.css\">\n";
+        print '<meta name="viewport" content="width=device-width">';
         // print '<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/codemirror.min.js" integrity="sha512-JpMCZgesTWh1iu/8ujURbwkJBgbgFWe3sTNCHdIuEvPwZuuN0nTUr2yawXahpgdEK7FOZUlW254Rp7AyDYJdjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>';
         // print '<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/codemirror.js" integrity="sha512-dK6guy/5KfuGFyZqGjtWr1HH8AGkI9UGZKD0uB9EDivJHt3dLSDgTteU0lsY4HtYbi3YhYnoKWQ5EfPS9TRCDg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>';
         print "</head>\n";
