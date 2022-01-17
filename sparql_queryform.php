@@ -54,11 +54,7 @@
     print reset_tag() . submit_tag();
     print form_end_tag();
 
-    print "<code>";
-    foreach(\EasyRdf\RdfNamespace::namespaces() as $prefix => $uri) {
-        print "PREFIX $prefix: &lt;".htmlspecialchars($uri)."&gt;<br />\n";
-    }
-    print "</code>";
+    
   ?>
 </div>
 
@@ -76,6 +72,12 @@
           print "<div class='error'>".$e->getMessage()."</div>\n";
       }
   }
+
+  print "<hr><code>";
+    foreach(\EasyRdf\RdfNamespace::namespaces() as $prefix => $uri) {
+        print "PREFIX $prefix: &lt;".htmlspecialchars($uri)."&gt;<br />\n";
+    }
+    print "</code>";
 ?>
 
 </body>
