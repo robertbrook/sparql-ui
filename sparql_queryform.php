@@ -48,15 +48,17 @@
     print form_tag();
     print label_tag('endpoint');
     print text_field_tag('endpoint', "https://api.parliament.uk/sparql", array('size'=>80)).'<br />';
+
+    print text_area_tag('query', "SELECT * WHERE {\n  ?s ?p ?o\n}\nLIMIT 10", array('rows' => 10, 'cols' => 80)).'<br />';
+    print check_box_tag('text') . label_tag('text', 'Plain text results').'<br />';
+    print reset_tag() . submit_tag();
+    print form_end_tag();
+
     print "<code>";
     foreach(\EasyRdf\RdfNamespace::namespaces() as $prefix => $uri) {
         print "PREFIX $prefix: &lt;".htmlspecialchars($uri)."&gt;<br />\n";
     }
     print "</code>";
-    print text_area_tag('query', "SELECT * WHERE {\n  ?s ?p ?o\n}\nLIMIT 10", array('rows' => 10, 'cols' => 80)).'<br />';
-    print check_box_tag('text') . label_tag('text', 'Plain text results').'<br />';
-    print reset_tag() . submit_tag();
-    print form_end_tag();
   ?>
 </div>
 
