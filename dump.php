@@ -18,11 +18,14 @@
     require_once "html_tag_helpers.php";
 ?>
 <html>
-<head><title>EasyRdf Graph Dumper</title></head>
+<head><title>EasyRdf Graph Dumper</title>
+    <meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    </head>
 <body>
 <h1>EasyRdf Graph Dumper</h1>
 
-<div style="margin: 10px">
+<div>
   <?= form_tag() ?>
   URI: <?= text_field_tag('uri', 'http://mmt.me.uk/foaf.rdf', array('size'=>80)) ?><br />
   Format: <?= label_tag('format_html', 'HTML').' '.radio_button_tag('format', 'html', true) ?>
