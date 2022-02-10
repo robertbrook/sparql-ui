@@ -14,8 +14,8 @@
      * @license    http://unlicense.org/
      */
 
-    require_once realpath(__DIR__.'/..')."/vendor/autoload.php";
-    require_once __DIR__."/html_tag_helpers.php";
+    require_once "./vendor/autoload.php";
+    require_once "html_tag_helpers.php";
 ?>
 <html>
 <head><title>EasyRdf Graph Dumper</title></head>
