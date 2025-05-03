@@ -17,9 +17,9 @@ jobs:
       - uses: actions/checkout@v4.2.2
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+        uses: shivammathur/setup-php@v2.33.0
         with:
-          php-version: '8.0'
+          php-version: '8.4'
 
       - name: Check if composer.json exists
         id: check_files
